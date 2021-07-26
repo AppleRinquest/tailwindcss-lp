@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind CSS - Simple Landing Page</title>
+</head>
+
+<body>
+
+    <!-- header STARTs -->
+    
+    <header class="mx-auto px-8 bg-cover bg-no-repeat" style="background-image: url('img/hero-image.jpg');">
+
+        <!-- Nav bar -->
+        <nav class="flex justify-between py-5 text-white lg:px-16 ">
+
+            <!-- logo -->
+            <div class="py-4 logo uppercase text-white text-2xl filter drop-shadow-md">
+                SURF BROS</div>
+
+            <!-- menus bar -->
+            <div class="py-4 text-right">
+                <!-- menu button -->
+                <button id="btn-menu" class="relative top-2 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <!-- menus list -->
+                <ul id="menus" class="hidden mt-4 lg:mt-0 lg:flex lg:gap-2">
+                    <li><a href="#" class="menu-link">home</a></li>
+                    <li><a href="#" class="menu-link">about</a></li>
+                    <li><a href="#" class="menu-link">testimonial</a></li>
+                    <li><a href="#" class="menu-link">contact us</a></li>
+                    <li class="mt-2 lg:mt-0">
+                        <span class="btn"><a href="#" class="menu-link">reservation</a></span>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!-- Hero section -->
+        <section
+            class="flex flex-col items-center sm:py-14 lg:px-5 lg:py-10 xl:px-16 xl:py-32 lg:flex-row lg:flex-wrap lg:justify-evenly">
+            <!-- text -->
+            <h1
+                class="text-white text-8xl py-2 sm:text-9xl md:mt-10 lg:mt-0 lg:py-0 lg:text-7xl xl:text-9xl 2xl:text-10xl opacity-75 filter drop-shadow">
+                explore<br>your
+                nature
+            </h1>
+            <!-- image -->
+            <img src="img/woman-surfing.png" alt="woman-surfing"
+                class="py-12 sm:w-11/12 md:p-12 md:mb-10 lg:w-2/4 lg:mb-0 lg:p-0 xl:w-6/12">
+        </section>
+
+    </header>
+    <!-- header ENDs -->
+
+
+    <!-- section STARTS -->
+    <main class="py-20 px-8 flex flex-col-reverse gap-20 lg:flex-row lg:py-20 lg:px-20 xl:px-10 2xl:py-32">
+
+        <!-- image -->
+        <div class="flex-1 w-full self-center md:py-20 lg:pr-10 lg:py-10 xl:pr-0">
+            <img src="img/founder-surf-bros.png" alt="Surf Bros Founder" class="w-max lg:w-full">
+        </div>
+
+        <!-- text -->
+        <div class="flex-1 self-center xl:pr-20 xl:pl-0">
+            <h1
+                class="pb-10 text-7xl gradient-header-title sm:text-8xl md:text-8xl md:py-10 lg:text-6xl xl:text-7xl 2xl:text-9xl 2xl:pt-0">
+                explore phuket beach today!
+            </h1>
+
+            <h4 class="pb-10 text-4xl sm:text-4xl md:pb-5 lg:text-2xl xl:text-4xl 2xl:text-6xl">Lorem ipsum dolor, sit
+                amet
+                consectetur
+                adipisicing elit.
+            </h4>
+
+            <p class="text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quas atque, maiores
+                voluptatibus sequi
+                autem, aspernatur nam quos ipsam soluta debitis sit assumenda pariatur magnam? Repudiandae illo debitis
+                doloremque itaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+
+            <!-- button -->
+            <div>
+                <a href="#"
+                    class="btn btn-surf mt-10 p-3 capitalize text-xl inline-block sm:text-3xl 2xl:mb-10 2xl:text-4xl">explore
+                    more
+                    exciting</a>
+            </div>
+
+        </div>
+    </main>
+    <!-- section ENDS -->
+
+
+
+    <!-- section STARTS -->
+    <section class="py-20 px-8 bg-surf-light-gray sm:py-36 xl:pt-32 xl:pb-0">
+
+        <!-- title -->
+        <h2 class="pb-24 text-center text-7xl sm:text-8xl lg:text-8xl">how awesome <br
+                class="hidden md:block lg:block">we are
+        </h2>
+
+        <!-- features list -->
+        <ul class="feature-list">
+            <li class="feature-item">
+
+                <!-- image -->
+                <div style="background-image: url('img/tall-tress.jpg')"
+                    class="flex-1 bg-no-repeat bg-cover bg-center 2xl:flex-size-1">
+                    <img src="img/tall-tress.jpg" alt="tall trees" class="w-full object-cover opacity-0">
+                </div>
+
+                <!-- text -->
+                <div class="bg-white flex-1 2xl:flex-size-2">
+                    <span
+                        class="font-Bebas text-5xl text-surf-blue bg-white px-4 py-1 relative -inset-y-8 rounded-t-md xl:inset-x-0">01.</span>
+                    <p class="px-5 sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+                        dolorum.
+                        Adipisci incidunt
+                        unde
+                        voluptatum repudiandae natus et nostrum officia sunt placeat, ut non tempora iste? Officia dicta
+                        vel
+                        non in.
+                        Necessitatibus quidem in aspernatur facilis at incidunt, animi dicta laborum dolor accusamus
+                        adipisci pariatur, odit iste molestias nisi officiis numquam, hic minus quos. Saepe in ratione
+                        blanditiis provident fugit fuga.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-10 mb-10 btn btn-surf text-lg pt-1 pb-1 capitalize sm:text-xl sm:p-3 sm:mb-20 xl:ml-5 xl:mb-9">read
+                        more</a>
+                </div>
+            </li>
+            <li class="feature-item">
+
+                <!-- image -->
+                <div style="background-image: url('img/man-sitdown.jpg')"
+                    class="flex-1 bg-no-repeat bg-cover bg-center 2xl:flex-size-1">
+                    <img src="img/man-sitdown.jpg" alt="" class="w-full object-cover opacity-0">
+                </div>
+
+                <!-- text -->
+                <div class="bg-white flex-1 2xl:flex-size-2">
+                    <span
+                        class="font-Bebas text-5xl text-surf-blue bg-white px-4 py-1 relative -inset-y-8 rounded-t-md xl:inset-x-0">02.</span>
+                    <p class="px-5 sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+                        dolorum.
+                        Adipisci incidunt
+                        unde
+                        voluptatum repudiandae natus et nostrum officia sunt placeat, ut non tempora iste? Officia dicta
+                        vel
+                        non in.
+                        Necessitatibus quidem in aspernatur facilis at incidunt, animi dicta laborum dolor accusamus
+                        adipisci pariatur, odit iste molestias nisi officiis numquam, hic minus quos. Saepe in ratione
+                        blanditiis provident fugit fuga.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-10 mb-10 btn btn-surf text-lg pt-1 pb-1 capitalize sm:text-xl sm:p-3 sm:mb-20 xl:ml-5 xl:mb-9">read
+                        more</a>
+                </div>
+            </li>
+            <li class="feature-item">
+
+                <!-- image -->
+                <div style="background-image: url('img/man-with-surf.jpg')"
+                    class="flex-1 bg-no-repeat bg-cover bg-center 2xl:flex-size-1">
+                    <img src="img/man-with-surf.jpg" alt="" class="w-full object-cover opacity-0">
+                </div>
+
+                <!-- text -->
+                <div class="bg-white flex-1 2xl:flex-size-2">
+                    <span
+                        class="font-Bebas text-5xl text-surf-blue bg-white px-4 py-1 relative -inset-y-8 rounded-t-md xl:inset-x-0">03.</span>
+                    <p class="px-5 sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+                        dolorum.
+                        Adipisci incidunt
+                        unde
+                        voluptatum repudiandae natus et nostrum officia sunt placeat, ut non tempora iste? Officia dicta
+                        vel
+                        non in.
+                        Necessitatibus quidem in aspernatur facilis at incidunt, animi dicta laborum dolor accusamus
+                        adipisci pariatur, odit iste molestias nisi officiis numquam, hic minus quos. Saepe in ratione
+                        blanditiis provident fugit fuga.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-10 mb-10 btn btn-surf text-lg pt-1 pb-1 capitalize sm:text-xl sm:p-3 sm:mb-20 xl:ml-5 xl:mb-9">read
+                        more</a>
+                </div>
+            </li>
+            <li class="feature-item">
+
+                <!-- image -->
+                <div style="background-image: url('img/surfing.jpg')"
+                    class="flex-1 bg-no-repeat bg-cover bg-center 2xl:flex-size-1">
+                    <img src="img/surfing.jpg" alt="" class="w-full object-cover opacity-0">
+                </div>
+
+                <!-- text -->
+                <div class="bg-white flex-1 2xl:flex-size-2">
+                    <span
+                        class="font-Bebas text-5xl text-surf-blue bg-white px-4 py-1 relative -inset-y-8 rounded-t-md xl:inset-x-0">04.</span>
+                    <p class="px-5 sm:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+                        dolorum.
+                        Adipisci incidunt
+                        unde
+                        voluptatum repudiandae natus et nostrum officia sunt placeat, ut non tempora iste? Officia dicta
+                        vel
+                        non in.
+                        Necessitatibus quidem in aspernatur facilis at incidunt, animi dicta laborum dolor accusamus
+                        adipisci pariatur, odit iste molestias nisi officiis numquam, hic minus quos. Saepe in ratione
+                        blanditiis provident fugit fuga.
+                    </p>
+                    <a href="#"
+                        class="inline-block mt-10 mb-10 btn btn-surf text-lg pt-1 pb-1 capitalize sm:text-xl sm:p-3 sm:mb-20 xl:ml-5 xl:mb-9">read
+                        more</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- section ENDS -->
+
+
+    <!-- section STARTS -->
+    <section class="py-20 px-8 flex flex-col sm:flex-row sm:items-end">
+        <div class="flex-1 md:flex-size-1 lg:flex-1 xl:pl-28 2xl:flex-size-1">
+            <h3 class="text-surf-dark-gray text-4xl lg:text-6xl">subscribe</h3>
+            <div class="text-surf-blue font-Bebas text-3xl relative inset-x-3 -inset-y-2 lg:text-6xl">get our latest
+                news</div>
+        </div>
+
+        <div class="flex-1 md:flex-size-2 lg:flex-1 2xl:flex-size-2">
+            <form action="#" class="py-2 flex gap-1 md:justify-center lg:justify-start lg:pb-4">
+                <input type="email" placeholder="Your Email"
+                    class="ring-1 ring-surf-gray bg-surf-light-gray px-2 py-1 rounded outline-none lg:w-4/6 xl:w-4/6 2xl:w-3/6">
+                <button
+                    class="bg-surf-blue text-white font-Bebas px-5 py-1 rounded hover:bg-surf-dark-gray outline-none lg:text-2xl xl:text-3xl 2xl:text-5xl">go!</button>
+            </form>
+        </div>
+    </section>
+    <!-- section ENDS -->
+
+
+    <hr class="border border-gray-300 border-opacity-30">
+
+
+    <!-- footer STARTS-->
+    <footer class="px-8 pt-5 pb-10 flex flex-col text-center sm:flex-row sm:justify-between">
+        <div class="text-surf-gray">copyright@2021 <span class="uppercase">surf bros</span></div>
+        <div class="text-surf-gray">powered by <a href="https://applerinquest.com" title="WordPress developer"
+                class="text-surf-blue capitalize">apple rinquest</a>
+        </div>
+    </footer>
+    <!-- footer ENDS -->
+
+</body>
+
+
+<!-- Javascript STARTS -->
+<script>
+
+    // # menu button
+    document.getElementById("btn-menu").addEventListener("click", openDropDownMenu);
+
+    // # show dropdown menu
+    function openDropDownMenu() {
+        const menus = document.getElementById("menus");
+
+        if (menus.style.display === "none" || menus.style.display.length === 0) {
+            menus.style.display = "block";
+        } else {
+            menus.style.display = "none";
+        }
+    }
+
+</script>
+<!-- Javascript ENDS -->
+
+</html>
